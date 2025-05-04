@@ -11,10 +11,7 @@
 /* ************************************************************************** */
 
 //#include <unistd.h>
-
-int	ft_isalpha(int c);
-int	ft_islower(int c);
-int	ft_isupper(int c);
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -43,8 +40,8 @@ int	ft_isupper(int c)
 /*int	main(void)
 {
 	if (ft_isalpha(128))
-        write(1, "T", 1);
-    else
-        write(1, "F", 1);
-    write(1, "\n", 1);
+		write(1, "T", 1);
+	else
+		write(1, "F", 1);
+	write(1, "\n", 1);
 }*/

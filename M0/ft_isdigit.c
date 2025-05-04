@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dromo-me <dromo-me@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 23:20:08 by dromo-me          #+#    #+#             */
-/*   Updated: 2025/05/03 23:20:23 by dromo-me         ###   ########.fr       */
+/*   Created: 2025/05/04 01:00:18 by dromo-me          #+#    #+#             */
+/*   Updated: 2025/05/04 01:01:15 by dromo-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// libft.h
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-int	ft_isalpha(int c);
-int	ft_islower(int c);
-int	ft_isupper(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-
-#endif
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
