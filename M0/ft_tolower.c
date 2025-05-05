@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dromo-me <dromo-me@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/04 20:04:52 by dromo-me          #+#    #+#             */
-/*   Updated: 2025/05/04 20:04:54 by dromo-me         ###   ########.fr       */
+/*   Created: 2025/05/05 20:59:25 by dromo-me          #+#    #+#             */
+/*   Updated: 2025/05/05 20:59:37 by dromo-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+int	ft_tolower(int c)
 {
-	size_t	i;
-
-	i = 0;
-	if (size > 0)
+	if (ft_isupper(c))
 	{
-		while (src[i] != '\0' && i < size - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
+		c += 32;
+		return (c);
 	}
-	return (ft_strlen(src));
+	else
+		return (c);
 }
