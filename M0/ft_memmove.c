@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+// memmove - This functions moves 'n' bytes from 'src' to 'dest'.
+//			 To prevent overlap, it compares the address from 'dest' and 'src'
+//			 with each other, in order to know where to copy from, starting
+//			 at the beginning or from the end
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t				i;

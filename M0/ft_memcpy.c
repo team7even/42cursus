@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//memcpy
+//memcpy - Copy from *src to *dest 'n' bytes. Returns the address of dest
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t				i;

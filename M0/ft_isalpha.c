@@ -13,6 +13,7 @@
 //#include <unistd.h>
 #include "libft.h"
 
+// isalpha - Checks for letters. Either lowercase (a-z) or uppercase (A-Z)
 int	ft_isalpha(int c)
 {
 	if (ft_islower(c) || ft_isupper(c))

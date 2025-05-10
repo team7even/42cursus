@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+// memchr - This function returns the memory direction where 'c' is found
+// 			within the first 'n' bytes. If it can't be found, it returns NULL
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;

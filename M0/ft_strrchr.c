@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// strrchr - returns a pointer to the location of the last occurrence of c
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;

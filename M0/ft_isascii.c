@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+// isascii - Checks if the value of 'c' received is an ascii character.
+//			 values 0-127
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

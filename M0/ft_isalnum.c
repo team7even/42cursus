@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+// isalnum - checks the 'c' received whether it is a letter (a-z, A-Z) or 
+// 			 a number. 
+
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))

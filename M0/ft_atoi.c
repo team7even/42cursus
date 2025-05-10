@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dromo-me <dromo-me@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/04 17:44:10 by dromo-me          #+#    #+#             */
-/*   Updated: 2025/05/04 17:44:13 by dromo-me         ###   ########.fr       */
+/*   Created: 2025/05/08 23:31:45 by dromo-me          #+#    #+#             */
+/*   Updated: 2025/05/08 23:31:48 by dromo-me         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// bzero - Memory space starting at *s and for the next 'n' bytes is set to \0
-void	*ft_bzero(void *s, size_t n)
+int	atoi(const char *nptr)
 {
-	size_t			i;
-	unsigned char	*b;
-
+	size_t	i;
+	int		res;
+	
 	i = 0;
-	b = (unsigned char *)s;
-	while (i < n)
+	res = 0;
+	while (nptr[i] != '\0')
 	{
-		b[i] = '\0';
+		if (ft_isdigit(nptr[i]))
+
 		i++;
 	}
-	return (s);
+	return (res);
 }
