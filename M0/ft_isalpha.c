@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dromo-me <dromo-me@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: dromo <dromo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 22:58:34 by dromo-me          #+#    #+#             */
-/*   Updated: 2025/05/02 22:58:50 by dromo-me         ###   ########.fr       */
+/*   Updated: 2025/05/12 21:51:40 by dromo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <unistd.h>
 #include "libft.h"
 
-// isalpha - Checks for letters. Either lowercase (a-z) or uppercase (A-Z)
 int	ft_isalpha(int c)
 {
 	if (ft_islower(c) || ft_isupper(c))

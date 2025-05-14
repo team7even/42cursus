@@ -3,17 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dromo-me <dromo-me@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: dromo <dromo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:45:23 by dromo-me          #+#    #+#             */
-/*   Updated: 2025/05/04 01:45:28 by dromo-me         ###   ########.fr       */
+/*   Updated: 2025/05/12 21:51:32 by dromo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// isascii - Checks if the value of 'c' received is an ascii character.
-//			 values 0-127
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
