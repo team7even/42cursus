@@ -69,7 +69,7 @@ static int	split_fill(char **res, const char *s, char c)
 			if (!res[word_i])
 			{
 				free_all(res, word_i);
-				return (, 0);
+				return (0);
 			}
 			word_i++;
 		}
