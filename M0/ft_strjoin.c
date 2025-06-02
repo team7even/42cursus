@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*Reserve enough memory to store s1 and s2 with malloc() and returns the string
+containing the concatanation of 's1' and 's2'
+*/
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*joined;
@@ -36,8 +40,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	joined[i + j] = '\0';
 	return (joined);
 }
-
-/*Reserva (con malloc(3)) y devuelve una nueva
-string, formada por la concatenación de ’s1’ y
-’s2’
-*/
