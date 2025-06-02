@@ -34,7 +34,7 @@ static int	count_words(const char *s, char c)
 	return (count);
 }
 
-// Helper: free allocated memory in case of failure
+// Free allocated memory in case of failure
 static void	free_all(char **res, int i)
 {
 	while (i--)
@@ -67,7 +67,10 @@ static int	split_fill(char **res, const char *s, char c)
 		{
 			res[word_i] = ft_substr(s, start, i - start);
 			if (!res[word_i])
-				return (free_all(res, word_i), 0);
+			{
+				free_all(res, word_i);
+				return (, 0);
+			}
 			word_i++;
 		}
 	}
