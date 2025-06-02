@@ -13,7 +13,7 @@
 #include "libft.h"
 
 // Returns a new string resulting from applying function *f to each character
-// of the string *s, passing both index and char
+// of the string *s, passing both index and char as parameters
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
